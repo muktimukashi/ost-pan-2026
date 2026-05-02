@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagu OST PAN 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="noise"></div>
+
+  <main class="app-shell">
+    <section class="hero-card">
+      <div class="hero-copy">
+        <p class="eyebrow">PAN Performa Anak Negeri 2026</p>
+        <h1>Lagu OST PAN 2026</h1>
+        <p class="hero-text">
+          Halaman ini menjadi pengisi sementara subdomain resmi untuk menampilkan
+          kumpulan lagu original soundtrack PAN Performa Anak Negeri 2026.
+        </p>
+        <p class="hero-subtext">
+          Pilih lagu yang tersedia, lalu nikmati visual spectrum yang bergerak mengikuti musik.
+        </p>
+      </div>
+
+      <div class="player-panel">
+        <canvas id="spectrum" width="960" height="360" aria-label="Spectrum visualizer"></canvas>
+
+        <div class="now-playing">
+          <div>
+            <p class="label">Now Playing</p>
+            <h2 id="track-title">Pilih lagu dulu</h2>
+            <p id="track-meta">Spectrum siap saat audio diputar</p>
+          </div>
+          <div class="pulse-orb" id="pulse-orb"></div>
+        </div>
+
+        <div class="progress-wrap">
+          <span id="current-time">0:00</span>
+          <input id="progress" type="range" min="0" max="100" value="0" step="0.1">
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="controls">
+          <button id="prev-btn" class="ghost-btn" type="button">Prev</button>
+          <button id="play-btn" class="play-btn" type="button">Play</button>
+          <button id="next-btn" class="ghost-btn" type="button">Next</button>
+        </div>
+
+        <audio id="audio"></audio>
+      </div>
+    </section>
+
+    <section class="playlist-card">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Official Playlist</p>
+          <h3>Daftar Lagu OST</h3>
+        </div>
+        <p class="helper-text">Penambahan lagu dikelola oleh admin.</p>
+      </div>
+      <div id="playlist" class="playlist"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
