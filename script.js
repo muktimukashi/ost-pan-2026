@@ -1,6 +1,6 @@
 const starterTracks = [
-  { title: "musici", src: "musici.mp3", source: "Folder lokal" },
-  { title: "Saxo Semut", src: "Saxo Semut.mp3", source: "Folder lokal" }
+  { title: "Mars Semut (Opener)", src: "Mars Semut (Opener).mp3", source: "Folder lokal" },
+  { title: "Mars Semut (Saxophone)", src: "Mars Semut (Saxophone).mp3", source: "Folder lokal" }
 ];
 
 const audio = document.getElementById("audio");
